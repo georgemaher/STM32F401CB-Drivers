@@ -1,0 +1,48 @@
+#include"STD_TYPES.h"
+
+
+#ifndef RCC_DEFS_H_
+#define	RCC_DEFS_H_
+
+
+#define RCC_BASE_ADDRESS				0x40023800
+
+typedef struct{
+	uint32	RCC_CR;
+	uint32	RCC_PLLCFGR;
+	uint32	RCC_CFGR;
+	uint32	RCC_CIR;
+	uint32	RCC_AHB1RSTR;
+	uint32	RCC_AHB2RSTR;
+	uint32	RCC_RESERVED0[2];
+	uint32	RCC_APB1RSTR;
+	uint32	RCC_APB2RSTR;
+	uint32	RCC_RESERVED1[2];
+	uint32	RCC_AHB1ENR;
+	uint32	RCC_AHB2ENR;
+	uint32	RCC_RESERVED2[2];
+	uint32	RCC_APB1ENR;
+	uint32	RCC_APB2ENR;
+	uint32	RCC_AHB1LPENR;
+	uint32	RCC_AHB2LPENR;
+	uint32	RCC_RESERVED3[2];
+	uint32	RCC_APB1LPENR;
+	uint32	RCC_APB2LPENR;
+	uint32	RCC_RESERVED4[2];
+	uint32	RCC_BDCR;
+	uint32	RCC_CSR;
+	uint32	RCC_RESERVED5[2];
+	uint32	RCC_SSCGR;
+	uint32	RCC_PLLI2SCFGR;
+	uint32	RCC_RESERVED;
+	uint32	RCC_DCKCFGR;
+	
+}RCC_struct_t;
+
+#define RCC_REGS				((RCC_struct_t *)RCC_BASE_ADDRESS)
+
+
+
+
+
+#endif
